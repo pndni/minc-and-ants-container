@@ -9,7 +9,7 @@ From: pndni/minc-container:1.2.0
     pushd ANTs_build
     /opt/cmake/bin/cmake ../ANTs_src \
     -DITK_BUILD_MINC_SUPPORT=ON
-    make
+    make -j 2
     popd  # ANTs_build
     mkdir -p /opt/ants/bin
     # it doesn't look like the libraries are needed. no RPATH or
